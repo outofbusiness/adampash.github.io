@@ -31,7 +31,8 @@ brew install gcc
 brew install Caskroom/cask/mactex
 export PATH=$PATH:/usr/texbin
 
-# install octave
+# install octave. You may need to update & upgrade before that.
+brew update && brew upgrade
 brew install octave --with-x11
 
 # install fltk for gnuplot
