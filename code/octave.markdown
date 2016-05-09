@@ -34,6 +34,10 @@ export PATH=$PATH:/usr/texbin
 # install octave
 brew install octave --with-x11
 
+# change permissions to man to install libpng
+sudo chown -R username:admin /usr/local/share/man/man5
+brew link libpng
+
 # install fltk for gnuplot
 brew install fltk
 {% endhighlight %}
