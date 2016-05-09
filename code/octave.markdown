@@ -38,6 +38,11 @@ brew install octave --with-x11
 brew install fltk
 {% endhighlight %}
 
+#if the fltk installation fails, download the source from www.fltk.org/software.php and build it with following steps
+./configure CC=clang
+make
+sudo make install
+
 Last, you need to edit your .octaverc file to get gnuplot to play nicely with Octave. So, in your home directory, create a new .octaverc file and paste the following:
 
 {% highlight bash %}
